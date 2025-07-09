@@ -1,0 +1,89 @@
+{
+  "costAnalysisRequest": {
+    "procurementItem": {
+      "itemId": "COMP-XYZ-001",
+      "name": "High-Volume Sensor Unit",
+      "description": "Standardized sensor unit for automated assembly line.",
+      "targetQuantity": 100000,
+      "unitOfMeasure": "EA"
+    },
+    "supplierProposals": [
+      {
+        "supplierId": "SUP-ALPHA-001",
+        "supplierName": "Alpha Components Ltd.",
+        "proposalDetails": {
+          "unitPrice": {
+            "amount": 15.50,
+            "currency": "USD"
+          },
+          "volumeDiscounts": [
+            {"quantityThreshold": 50000, "discountPercentage": 2.0},
+            {"quantityThreshold": 100000, "discountPercentage": 4.0}
+          ],
+          "paymentTerms": "Net 60",
+          "deliveryLeadTimeWeeks": 8,
+          "shippingCost": {
+            "amount": 2500.00,
+            "currency": "USD"
+          },
+          "warrantyPeriodMonths": 12,
+          "maintenanceCostPerYear": {
+            "amount": 5000.00,
+            "currency": "USD"
+          }
+        }
+      },
+      {
+        "supplierId": "SUP-BETA-002",
+        "supplierName": "Beta Solutions Inc.",
+        "proposalDetails": {
+          "unitPrice": {
+            "amount": 16.00,
+            "currency": "USD"
+          },
+          "volumeDiscounts": [
+            {"quantityThreshold": 75000, "discountPercentage": 3.0}
+          ],
+          "paymentTerms": "Net 45",
+          "deliveryLeadTimeWeeks": 6,
+          "shippingCost": {
+            "amount": 2000.00,
+            "currency": "USD"
+          },
+          "warrantyPeriodMonths": 24,
+          "maintenanceCostPerYear": {
+            "amount": 6000.00,
+            "currency": "USD"
+          }
+        }
+      }
+    ],
+    "internalBenchmarks": {
+      "targetUnitPrice": {
+        "amount": 15.00,
+        "currency": "USD"
+      },
+      "historicalAverageUnitPrice": {
+        "amount": 15.20,
+        "currency": "USD"
+      },
+      "marketRateRange": {
+        "minAmount": 14.80,
+        "maxAmount": 16.50,
+        "currency": "USD"
+      }
+    },
+    "costCategoriesToAnalyze": [
+      "Purchase Price",
+      "Shipping",
+      "PaymentTermDiscount",
+      "TotalCostOfOwnership"
+    ],
+    "analysisHorizonMonths": 36,
+    "outputDetails": {
+      "includeComparativeAnalysis": true,
+      "includeNegotiationPoints": true,
+      "includeCostBreakdown": true
+    }
+  }
+}

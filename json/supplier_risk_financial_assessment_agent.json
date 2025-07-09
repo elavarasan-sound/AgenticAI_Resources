@@ -1,0 +1,42 @@
+{
+  "assessmentRequest": {
+    "suppliers": [
+      {
+        "supplierId": "SUP-MNF-001",
+        "supplierName": "Industrial Components Inc."
+      },
+      {
+        "supplierId": "SUP-LOG-002",
+        "supplierName": "Logistics Solutions Co."
+      },
+      {
+        "supplierId": "SUP-RAW-003",
+        "supplierName": "Raw Material Supply Corp."
+      }
+    ],
+    "assessmentTypes": [
+      "Financial Health Check",
+      "Operational Risk",
+      "Geopolitical Risk",
+      "Compliance & Ethics",
+      "Environmental, Social, and Governance (ESG)"
+    ],
+    "financialMetricsScope": [
+      "CreditScore",
+      "DebtToEquityRatio",
+      "CurrentRatio",
+      "ProfitabilityTrends",
+      "CashFlowStatements"
+    ],
+    "timeframe": {
+      "dataAnalysisPeriod": "Last 3 Fiscal Years",
+      "forecastHorizon": "Next 12 Months"
+    },
+    "outputPreferences": {
+      "includeDetailedJustification": true,
+      "includeRiskScoresPerCategory": true,
+      "includeMitigationStrategies": true,
+      "reportFormat": "JSON"
+    }
+  }
+}

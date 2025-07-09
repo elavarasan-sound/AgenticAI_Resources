@@ -1,0 +1,30 @@
+{
+  "riskAssessmentRequest": {
+    "suppliers": [
+      {
+        "supplierId": "SUP-XYZ-001",
+        "supplierName": "Global Materials Corp."
+      },
+      {
+        "supplierId": "SUP-ABC-002",
+        "supplierName": "Precision Components Ltd."
+      }
+    ],
+    "riskCategories": [
+      "Financial Stability",
+      "Operational Resilience",
+      "Geopolitical Risk",
+      "Compliance & Ethics",
+      "Environmental & Social Governance (ESG)"
+    ],
+    "timeframe": {
+      "analysisPeriod": "Past 24 months",
+      "predictionHorizon": "Next 12 months"
+    },
+    "outputDetails": {
+      "includeMitigationRecommendations": true,
+      "includeDataSources": true,
+      "detailLevel": "Comprehensive"
+    }
+  }
+}
