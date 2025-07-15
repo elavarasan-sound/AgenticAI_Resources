@@ -1,72 +1,77 @@
 {
-  "rfpAnalysisRequest": {
-    "rfpDetails": {
-      "rfpId": "RFP-PROD-AUTOMATION-2025-001",
-      "title": "Automated Production Line System",
-      "description": "RFP for a fully automated production line, including robotics, assembly, and quality control systems.",
-      "issuedDate": "2025-05-15",
-      "dueDate": "2025-06-30"
-    },
-    "evaluationCriteria": [
-      {
-        "criterionId": "CRIT-TECH-001",
-        "name": "Technical Capability",
-        "description": "Ability to meet specified technical requirements and system integration.",
-        "weight": 0.40,
-        "subCriteria": [
-          {"id": "SC-ROBOT", "name": "Robotics Efficiency", "maxScore": 10},
-          {"id": "SC-INTEG", "name": "System Integration Ease", "maxScore": 10},
-          {"id": "SC-QC", "name": "Quality Control Accuracy", "maxScore": 10}
-        ]
-      },
-      {
-        "criterionId": "CRIT-FIN-002",
-        "name": "Pricing Structure",
-        "description": "Competitiveness of proposed costs, including hardware, software, installation, and maintenance.",
-        "weight": 0.30,
-        "subCriteria": [
-          {"id": "SC-HW", "name": "Hardware Cost", "maxScore": 10, "isCostFactor": true},
-          {"id": "SC-SW", "name": "Software Licensing", "maxScore": 10, "isCostFactor": true},
-          {"id": "SC-MAINT", "name": "Maintenance & Support", "maxScore": 10, "isCostFactor": true}
-        ]
-      },
-      {
-        "criterionId": "CRIT-TIM-003",
-        "name": "Delivery & Implementation Timeline",
-        "description": "Feasibility and speed of project completion.",
-        "weight": 0.20,
-        "subCriteria": [
-          {"id": "SC-DEL", "name": "Delivery Schedule", "maxScore": 10},
-          {"id": "SC-IMP", "name": "Implementation Duration", "maxScore": 10}
-        ]
-      },
-      {
-        "criterionId": "CRIT-PERF-004",
-        "name": "Supplier Past Performance",
-        "description": "Track record with similar projects and client references.",
-        "weight": 0.10,
-        "subCriteria": [
-          {"id": "SC-REF", "name": "References & Case Studies", "maxScore": 10},
-          {"id": "SC-EXP", "name": "Industry Experience", "maxScore": 10}
-        ]
-      }
-    ],
-    "rfpResponses": [
+  "rfpAnalysisResult": {
+    "analysisId": "RFP-SCORE-20250701-001",
+    "rfpId": "RFP-PROD-AUTOMATION-2025-001",
+    "generatedAt": "2025-07-01T10:30:00Z",
+    "scoredResponses": [
       {
         "supplierId": "SUP-001",
         "supplierName": "Automation Solutions Inc.",
-        "responseContent": "Response content for Automation Solutions Inc. This would be the full text or structured data from their RFP submission covering technical proposals, pricing tables, project timelines, and references."
+        "overallScore": 8.5,
+        "ranking": 1,
+        "criterionScores": [
+          {
+            "criterionId": "CRIT-TECH-001",
+            "name": "Technical Capability",
+            "score": 9.0,
+            "justification": "Strong proposal for robotics efficiency (9/10) and seamless system integration (9/10). Quality control accuracy (9/10) appears robust, detailed explanation of sensor tech and AI integration."
+          },
+          {
+            "criterionId": "CRIT-FIN-002",
+            "name": "Pricing Structure",
+            "score": 8.0,
+            "justification": "Competitive hardware cost (8/10) and reasonable software licensing (8/10). Maintenance and support costs (8/10) are slightly higher but offer comprehensive coverage."
+          },
+          {
+            "criterionId": "CRIT-TIM-003",
+            "name": "Delivery & Implementation Timeline",
+            "score": 9.0,
+            "justification": "Proposed timeline of 6 months for delivery (9/10) and 2 months for implementation (9/10) is aggressive but appears feasible given their detailed project plan and resource allocation."
+          },
+          {
+            "criterionId": "CRIT-PERF-004",
+            "name": "Supplier Past Performance",
+            "score": 8.0,
+            "justification": "Provided 3 strong references (8/10) with successful similar projects. Industry experience (8/10) is solid, particularly in automotive automation."
+          }
+        ]
       },
       {
         "supplierId": "SUP-002",
         "supplierName": "Robotics Innovations Co.",
-        "responseContent": "Response content for Robotics Innovations Co. Similar to the above, this would be their comprehensive submission."
+        "overallScore": 7.8,
+        "ranking": 2,
+        "criterionScores": [
+          {
+            "criterionId": "CRIT-TECH-001",
+            "name": "Technical Capability",
+            "score": 8.5,
+            "justification": "Good robotics efficiency (8/10), but system integration details (7/10) were less clear compared to SUP-001. Quality control accuracy (9/10) is excellent."
+          },
+          {
+            "criterionId": "CRIT-FIN-002",
+            "name": "Pricing Structure",
+            "score": 9.0,
+            "justification": "Very competitive hardware cost (9/10) and flexible software licensing (9/10). Maintenance and support costs (8/10) are average."
+          },
+          {
+            "criterionId": "CRIT-TIM-003",
+            "name": "Delivery & Implementation Timeline",
+            "score": 7.0,
+            "justification": "Proposed timeline of 8 months for delivery (7/10) and 3 months for implementation (7/10) is longer than desired, raising concerns about project velocity."
+          },
+          {
+            "criterionId": "CRIT-PERF-004",
+            "name": "Supplier Past Performance",
+            "score": 7.5,
+            "justification": "Provided 2 relevant references (7/10) with generally positive feedback. Industry experience (8/10) is strong in smaller scale projects."
+          }
+        ]
       }
     ],
-    "outputDetails": {
-      "includeJustification": true,
-      "includeRanking": true,
-      "scoringMethod": "WeightedAverage"
-    }
+    "overallRanking": [
+      {"supplierId": "SUP-001", "overallScore": 8.5, "rank": 1},
+      {"supplierId": "SUP-002", "overallScore": 7.8, "rank": 2}
+    ]
   }
 }
