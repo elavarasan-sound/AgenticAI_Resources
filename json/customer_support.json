@@ -1,0 +1,44 @@
+{
+  "tickets": [
+    {
+      "ticket_id": "CST10001",
+      "customer_name": "Amit Sharma",
+      "issue": "Discrepancy in invoice INV-202507",
+      "category": "Billing",
+      "priority": "High",
+      "timestamp": "2025-07-17T08:45:00Z"
+    },
+    {
+      "ticket_id": "CST10002",
+      "customer_name": "Neha Reddy",
+      "issue": "Unable to reset password",
+      "category": "Technical",
+      "priority": "Medium",
+      "timestamp": "2025-07-17T09:20:00Z"
+    },
+    {
+      "ticket_id": "CST10003",
+      "customer_name": "Raj Malhotra",
+      "issue": "Delayed product delivery - Order #DEL2231",
+      "category": "Order",
+      "priority": "High",
+      "timestamp": "2025-07-17T10:05:00Z"
+    },
+    {
+      "ticket_id": "CST10004",
+      "customer_name": "Fatima Khan",
+      "issue": "Charged twice for the same service",
+      "category": "Billing",
+      "priority": "Critical",
+      "timestamp": "2025-07-17T10:45:00Z"
+    },
+    {
+      "ticket_id": "CST10005",
+      "customer_name": "Rohit Joshi",
+      "issue": "Unable to track order #ORD9881",
+      "category": "Order",
+      "priority": "Low",
+      "timestamp": "2025-07-17T11:30:00Z"
+    }
+  ]
+}
