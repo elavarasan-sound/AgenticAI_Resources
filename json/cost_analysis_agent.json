@@ -1,89 +1,89 @@
 {
-  "costAnalysisRequest": {
-    "procurementItem": {
-      "itemId": "COMP-XYZ-001",
-      "name": "High-Volume Sensor Unit",
-      "description": "Standardized sensor unit for automated assembly line.",
-      "targetQuantity": 100000,
-      "unitOfMeasure": "EA"
-    },
-    "supplierProposals": [
+  "costAnalysisResult": {
+    "analysisId": "CA-SENSOR-20250619-001",
+    "generatedAt": "2025-06-19T17:35:00Z",
+    "procurementItemId": "COMP-XYZ-001",
+    "analysisSummary": "Detailed cost analysis completed for 'High-Volume Sensor Unit' across two suppliers. Alpha Components Ltd. presents a more favorable Total Cost of Ownership at target quantity due to better volume discounts, despite a slightly higher base unit price. Beta Solutions Inc. offers faster delivery but at a higher overall cost.",
+    "supplierCostDetails": [
       {
         "supplierId": "SUP-ALPHA-001",
         "supplierName": "Alpha Components Ltd.",
-        "proposalDetails": {
-          "unitPrice": {
-            "amount": 15.50,
-            "currency": "USD"
+        "calculatedCosts": {
+          "effectiveUnitPrice": {
+            "amount": 14.88,
+            "currency": "USD",
+            "justification": "Base price $15.50 adjusted for 4.0% volume discount at 100,000 units."
           },
-          "volumeDiscounts": [
-            {"quantityThreshold": 50000, "discountPercentage": 2.0},
-            {"quantityThreshold": 100000, "discountPercentage": 4.0}
-          ],
-          "paymentTerms": "Net 60",
-          "deliveryLeadTimeWeeks": 8,
-          "shippingCost": {
+          "totalPurchasePrice": {
+            "amount": 1488000.00,
+            "currency": "USD",
+            "justification": "Effective Unit Price * Target Quantity."
+          },
+          "totalShippingCost": {
             "amount": 2500.00,
             "currency": "USD"
           },
-          "warrantyPeriodMonths": 12,
-          "maintenanceCostPerYear": {
-            "amount": 5000.00,
-            "currency": "USD"
+          "paymentTermSavings": {
+            "amount": 0.00,
+            "currency": "USD",
+            "justification": "Assuming no early payment discount for Net 60 terms."
+          },
+          "totalCostOfOwnership36Months": {
+            "amount": 1505500.00,
+            "currency": "USD",
+            "justification": "Total Purchase Price + Shipping + (Maintenance Cost * 3 years)."
           }
-        }
+        },
+        "varianceToBenchmark": {
+          "vsTargetUnitPrice": "+0.88",
+          "vsHistoricalAverage": "-0.32"
+        },
+        "negotiationPoints": [
+          "Explore possibility of even larger volume discounts for higher commitments.",
+          "Negotiate for shorter delivery lead time to match Beta Solutions Inc."
+        ]
       },
       {
         "supplierId": "SUP-BETA-002",
         "supplierName": "Beta Solutions Inc.",
-        "proposalDetails": {
-          "unitPrice": {
-            "amount": 16.00,
+        "calculatedCosts": {
+          "effectiveUnitPrice": {
+            "amount": 15.52,
+            "currency": "USD",
+            "justification": "Base price $16.00 adjusted for 3.0% volume discount at 100,000 units (threshold 75,000)."
+          },
+          "totalPurchasePrice": {
+            "amount": 1552000.00,
             "currency": "USD"
           },
-          "volumeDiscounts": [
-            {"quantityThreshold": 75000, "discountPercentage": 3.0}
-          ],
-          "paymentTerms": "Net 45",
-          "deliveryLeadTimeWeeks": 6,
-          "shippingCost": {
+          "totalShippingCost": {
             "amount": 2000.00,
             "currency": "USD"
           },
-          "warrantyPeriodMonths": 24,
-          "maintenanceCostPerYear": {
-            "amount": 6000.00,
-            "currency": "USD"
+          "paymentTermSavings": {
+            "amount": 0.00,
+            "currency": "USD",
+            "justification": "Assuming no early payment discount for Net 45 terms."
+          },
+          "totalCostOfOwnership36Months": {
+            "amount": 1572000.00,
+            "currency": "USD",
+            "justification": "Total Purchase Price + Shipping + (Maintenance Cost * 3 years)."
           }
-        }
+        },
+        "varianceToBenchmark": {
+          "vsTargetUnitPrice": "+0.52",
+          "vsHistoricalAverage": "+0.32"
+        },
+        "negotiationPoints": [
+          "Primary negotiation point: overall unit price to align closer with Alpha Components Ltd. or market average.",
+          "Explore options for reducing maintenance costs."
+        ]
       }
     ],
-    "internalBenchmarks": {
-      "targetUnitPrice": {
-        "amount": 15.00,
-        "currency": "USD"
-      },
-      "historicalAverageUnitPrice": {
-        "amount": 15.20,
-        "currency": "USD"
-      },
-      "marketRateRange": {
-        "minAmount": 14.80,
-        "maxAmount": 16.50,
-        "currency": "USD"
-      }
-    },
-    "costCategoriesToAnalyze": [
-      "Purchase Price",
-      "Shipping",
-      "PaymentTermDiscount",
-      "TotalCostOfOwnership"
-    ],
-    "analysisHorizonMonths": 36,
-    "outputDetails": {
-      "includeComparativeAnalysis": true,
-      "includeNegotiationPoints": true,
-      "includeCostBreakdown": true
-    }
+    "overallRecommendations": [
+      "Alpha Components Ltd. offers better long-term value given the target quantity and TCO. Focus negotiations on delivery lead time.",
+      "Beta Solutions Inc. has a delivery advantage; however, their cost structure needs significant negotiation to be competitive."
+    ]
   }
 }
