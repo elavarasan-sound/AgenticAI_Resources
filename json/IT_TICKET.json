@@ -1,0 +1,82 @@
+[
+  {
+    "TicketID": "JIRA-101",
+    "Summary": "Production server down in APAC region",
+    "Description": "Users across Asia unable to access ERP portal due to server downtime.",
+    "Department": "Infrastructure",
+    "Reporter": "John Matthews",
+    "Urgency": "High",
+    "Impact": "Multiple users",
+    "SLA": "4 hours"
+  },
+  {
+    "TicketID": "JIRA-102",
+    "Summary": "Email delivery delayed for several employees",
+    "Description": "Email queue backlog causing delay in mail delivery by 2 hours.",
+    "Department": "IT Support",
+    "Reporter": "Priya Desai",
+    "Urgency": "Medium",
+    "Impact": "Department level",
+    "SLA": "8 hours"
+  },
+  {
+    "TicketID": "JIRA-103",
+    "Summary": "Password reset request for single user",
+    "Description": "Employee forgot password and is unable to access HRMS.",
+    "Department": "HR",
+    "Reporter": "Karan Patel",
+    "Urgency": "Low",
+    "Impact": "Single user",
+    "SLA": "24 hours"
+  },
+  {
+    "TicketID": "JIRA-104",
+    "Summary": "Security breach detected on finance database",
+    "Description": "Suspicious login attempts detected from external IP.",
+    "Department": "Cybersecurity",
+    "Reporter": "Megha R.",
+    "Urgency": "Critical",
+    "Impact": "Executive data at risk",
+    "SLA": "2 hours"
+  },
+  {
+    "TicketID": "JIRA-105",
+    "Summary": "UI alignment issue on dashboard",
+    "Description": "Alignment of charts is off on the analytics dashboard in Chrome.",
+    "Department": "Frontend",
+    "Reporter": "Sameer Shah",
+    "Urgency": "Low",
+    "Impact": "Cosmetic",
+    "SLA": "48 hours"
+  },
+  {
+    "TicketID": "JIRA-106",
+    "Summary": "Database latency in order management system",
+    "Description": "Query response time exceeding 5 seconds during peak hours.",
+    "Department": "Database",
+    "Reporter": "Riya S.",
+    "Urgency": "High",
+    "Impact": "Production system",
+    "SLA": "6 hours"
+  },
+  {
+    "TicketID": "JIRA-107",
+    "Summary": "VPN connection issue for remote employees",
+    "Description": "Several employees unable to connect to corporate VPN during working hours.",
+    "Department": "Network",
+    "Reporter": "Aditya Rao",
+    "Urgency": "Medium",
+    "Impact": "Multiple users",
+    "SLA": "12 hours"
+  },
+  {
+    "TicketID": "JIRA-108",
+    "Summary": "Finance report export not generating",
+    "Description": "Quarterly export report failing with timeout error.",
+    "Department": "Finance IT",
+    "Reporter": "Neha Sharma",
+    "Urgency": "High",
+    "Impact": "Executive reporting blocked",
+    "SLA": "4 hours"
+  }
+]
