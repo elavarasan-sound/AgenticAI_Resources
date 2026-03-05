@@ -1,82 +1,76 @@
-[
-  {
-    "TicketID": "JIRA-101",
-    "Summary": "Production server down in APAC region",
-    "Description": "Users across Asia unable to access ERP portal due to server downtime.",
-    "Department": "Infrastructure",
-    "Reporter": "John Matthews",
-    "Urgency": "High",
-    "Impact": "Multiple users",
-    "SLA": "4 hours"
-  },
-  {
-    "TicketID": "JIRA-102",
-    "Summary": "Email delivery delayed for several employees",
-    "Description": "Email queue backlog causing delay in mail delivery by 2 hours.",
-    "Department": "IT Support",
-    "Reporter": "Priya Desai",
-    "Urgency": "Medium",
-    "Impact": "Department level",
-    "SLA": "8 hours"
-  },
-  {
-    "TicketID": "JIRA-103",
-    "Summary": "Password reset request for single user",
-    "Description": "Employee forgot password and is unable to access HRMS.",
-    "Department": "HR",
-    "Reporter": "Karan Patel",
-    "Urgency": "Low",
-    "Impact": "Single user",
-    "SLA": "24 hours"
-  },
-  {
-    "TicketID": "JIRA-104",
-    "Summary": "Security breach detected on finance database",
-    "Description": "Suspicious login attempts detected from external IP.",
-    "Department": "Cybersecurity",
-    "Reporter": "Megha R.",
-    "Urgency": "Critical",
-    "Impact": "Executive data at risk",
-    "SLA": "2 hours"
-  },
-  {
-    "TicketID": "JIRA-105",
-    "Summary": "UI alignment issue on dashboard",
-    "Description": "Alignment of charts is off on the analytics dashboard in Chrome.",
-    "Department": "Frontend",
-    "Reporter": "Sameer Shah",
-    "Urgency": "Low",
-    "Impact": "Cosmetic",
-    "SLA": "48 hours"
-  },
-  {
-    "TicketID": "JIRA-106",
-    "Summary": "Database latency in order management system",
-    "Description": "Query response time exceeding 5 seconds during peak hours.",
-    "Department": "Database",
-    "Reporter": "Riya S.",
-    "Urgency": "High",
-    "Impact": "Production system",
-    "SLA": "6 hours"
-  },
-  {
-    "TicketID": "JIRA-107",
-    "Summary": "VPN connection issue for remote employees",
-    "Description": "Several employees unable to connect to corporate VPN during working hours.",
-    "Department": "Network",
-    "Reporter": "Aditya Rao",
-    "Urgency": "Medium",
-    "Impact": "Multiple users",
-    "SLA": "12 hours"
-  },
-  {
-    "TicketID": "JIRA-108",
-    "Summary": "Finance report export not generating",
-    "Description": "Quarterly export report failing with timeout error.",
-    "Department": "Finance IT",
-    "Reporter": "Neha Sharma",
-    "Urgency": "High",
-    "Impact": "Executive reporting blocked",
-    "SLA": "4 hours"
-  }
-]
+{
+  "tickets": [
+    {
+      "ticket_id": "IT-1001",
+      "user_id": "U-501",
+      "issue_title": "Unable to login to company portal",
+      "issue_description": "I forgot my password and cannot login to the company portal.",
+      "reported_system": "Identity Management",
+      "priority_level": "Medium",
+      "ticket_timestamp": "2026-03-01T09:15:00Z"
+    },
+    {
+      "ticket_id": "IT-1002",
+      "user_id": "U-502",
+      "issue_title": "VPN connection failing",
+      "issue_description": "VPN keeps disconnecting and shows authentication failure.",
+      "reported_system": "VPN Gateway",
+      "priority_level": "High",
+      "ticket_timestamp": "2026-03-01T10:02:00Z"
+    },
+    {
+      "ticket_id": "IT-1003",
+      "user_id": "U-503",
+      "issue_title": "Account locked after multiple attempts",
+      "issue_description": "My account got locked after entering the wrong password several times.",
+      "reported_system": "Active Directory",
+      "priority_level": "Medium",
+      "ticket_timestamp": "2026-03-01T10:30:00Z"
+    },
+    {
+      "ticket_id": "IT-1004",
+      "user_id": "U-504",
+      "issue_title": "Cannot access email",
+      "issue_description": "Outlook is not syncing and I cannot access my mailbox.",
+      "reported_system": "Email Server",
+      "priority_level": "High",
+      "ticket_timestamp": "2026-03-01T11:05:00Z"
+    },
+    {
+      "ticket_id": "IT-1005",
+      "user_id": "U-505",
+      "issue_title": "Software installation request",
+      "issue_description": "Need installation of design software on my workstation.",
+      "reported_system": "Endpoint Management",
+      "priority_level": "Low",
+      "ticket_timestamp": "2026-03-01T11:20:00Z"
+    },
+    {
+      "ticket_id": "IT-1006",
+      "user_id": "U-506",
+      "issue_title": "Laptop cannot connect to office WiFi",
+      "issue_description": "My laptop is unable to detect the office wireless network.",
+      "reported_system": "Network Infrastructure",
+      "priority_level": "High",
+      "ticket_timestamp": "2026-03-01T11:50:00Z"
+    },
+    {
+      "ticket_id": "IT-1007",
+      "user_id": "U-507",
+      "issue_title": "Password expired",
+      "issue_description": "My password expired and system is asking me to reset it.",
+      "reported_system": "Identity Management",
+      "priority_level": "Medium",
+      "ticket_timestamp": "2026-03-01T12:10:00Z"
+    },
+    {
+      "ticket_id": "IT-1008",
+      "user_id": "U-508",
+      "issue_title": "VPN access needed",
+      "issue_description": "I cannot access VPN while working remotely.",
+      "reported_system": "VPN Gateway",
+      "priority_level": "Medium",
+      "ticket_timestamp": "2026-03-01T12:45:00Z"
+    }
+  ]
+}
