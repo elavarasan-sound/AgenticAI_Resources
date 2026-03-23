@@ -1,37 +1,22 @@
-[
-  {
-    "productId": "P1001",
-    "productName": "Smart Sensor X1",
-    "ourPrice": 149.99,
-    "competitorPrices": [152.00, 147.50, 149.00],
-    "averageCompetitorPrice": 149.50
-  },
-  {
-    "productId": "P1002",
-    "productName": "Industrial Motor M5",
-    "ourPrice": 299.99,
-    "competitorPrices": [305.00, 310.00, 299.00],
-    "averageCompetitorPrice": 304.67
-  },
-  {
-    "productId": "P1003",
-    "productName": "Automation Controller Z9",
-    "ourPrice": 499.00,
-    "competitorPrices": [489.00, 479.00, 499.00],
-    "averageCompetitorPrice": 489.00
-  },
-  {
-    "productId": "P1004",
-    "productName": "Servo Drive D8",
-    "ourPrice": 399.50,
-    "competitorPrices": [405.00, 399.00, 390.00],
-    "averageCompetitorPrice": 398.00
-  },
-  {
-    "productId": "P1005",
-    "productName": "PLC Unit Q7",
-    "ourPrice": 699.00,
-    "competitorPrices": [695.00, 700.00, 710.00],
-    "averageCompetitorPrice": 701.67
-  }
-]
+{
+  "pricing_data": [
+    {
+      "product_id": "P1001",
+      "product_name": "Wireless Earbuds",
+      "our_price": 2000,
+      "competitor_prices": [2100, 2050, 2200]
+    },
+    {
+      "product_id": "P1002",
+      "product_name": "Smart Watch",
+      "our_price": 3500,
+      "competitor_prices": [3000, 3200, 3100]
+    },
+    {
+      "product_id": "P1003",
+      "product_name": "Gaming Mouse",
+      "our_price": 1000,
+      "competitor_prices": [950, 980, 970]
+    }
+  ]
+}
